@@ -1,0 +1,227 @@
+<！DOCTYPE html >
+< html  lang =“ en ” >
+< title > W3.CSS模板</ title >
+< meta  charset =“ UTF-8 ” >
+< meta  name =“ viewport ” content =“ width = device-width，initial-scale = 1 ” >
+<鏈接 rel =“樣式表” href =“ https://www.w3schools.com/w3css/4/w3.css ” >
+< link  rel =“ stylesheet ” href =“ https://fonts.googleapis.com/css?family=Poppins ” >
+<樣式>
+body ，h1 ，h2 ，h3 ，h4 ，h5 { font-family：“ Poppins” ， sans-serif}
+正文{ font-size：16 px ;}
+。w3-half  img { margin-bottom：-6px; 頁邊距：16 px ; 不透明度：0.8 ; cursor：pointer}
+。w3-half  img：懸停{不透明度：1 }
+</ style >
+<身體>
+
+<！-側邊欄/菜單->
+< nav  class =“ w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding ” style =“ z-index：3; width：300px; font-weight：bold; ” id =“ mySidebar ” > < BR >
+  < a  href =“ javascript：void（0） ” onclick =“ w3_close（） ” class =“ w3-button w3-hide-large w3-display-topleft ” style =“ width：100％; font-size：22px ” >關閉菜單</ a >
+  < div  class =“ w3-container ” >
+    < H3 類=“ W3-填充-64 ” > < b >公司< BR >名稱</ b > </ H3 >
+  </ div >
+  < div  class =“ w3-bar-block ” >
+    <一個 HREF =“ ＃”的onclick =“ w3_close（） ”類=“ W3-BAR-項W3-W3按鈕-懸停白色” >主頁</一> 
+    <一個 HREF =“ #showcase ”的onclick =“ w3_close（） ”類=“ W3-BAR-項W3-W3按鈕-懸停白色” >展示</一> 
+    <一個 HREF =“ #services ”的onclick =“ w3_close（） ”類=“ W3-BAR-項W3-W3按鈕-懸停白色” >服務</一> 
+    <一個 HREF =“ #designers ”的onclick =“ w3_close（） ”類=“ W3-BAR-項W3-W3按鈕-懸停白色” >設計師</一> 
+    <一個 HREF =“ #Packages整批”的onclick =“ w3_close（） ”類=“ W3-BAR-項W3-W3按鈕-懸停白色” >包</一> 
+    <一個 HREF =“ #contact ”的onclick =“ w3_close（） ”類=“ W3-BAR-項W3-W3按鈕-懸停白色” >聯繫</一>
+  </ div >
+</導航>
+
+<！-小屏幕上的頂部菜單->
+< header  class =“ w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding ” >
+  <一個 HREF =“ JavaScript的：無效（0） ”類=“ W3-W3按鈕紅色W3-餘量-右”的onclick =“ w3_open（） ” > ☰ </一>
+  < span >公司名稱</ span >
+</標頭>
+
+<！-在小屏幕上打開側欄時的疊加效果->
+< div  class =“ w3-overlay w3-hide-large ” onclick =“ w3_close（） ” style =“ cursor：pointer ” title =“ close side menu ” id =“ myOverlay ” > </ div >
+
+<！-！頁面內容！->
+< div  class =“ w3-main ” style =“ margin-left：340px; margin-right：40px ” >
+
+  <！-頁眉->
+  < div  class =“ w3-container ”樣式=“ margin-top：80px ” id =“展示” >
+    < h1  class =“ w3-jumbo ” > < b >室內設計</ b > </ h1 >
+    < h1  class =“ w3-xxxlarge w3-text-red ” > < b >展示。</ b > </ h1 >
+    < hr 樣式=“ width：50px; border：5px實心紅色” class =“ w3-round ” >
+  </ div >
+  
+  <！-照片網格（模式）->
+  < div  class =“ w3-row-padding ” >
+    < div  class =“ w3-half ” >
+      < img  src =“ /w3images/kitchenconcrete.jpg ”風格=“寬度：100％ ” onclick =“ onClick（this） ” alt =“混凝土遇見磚塊” >
+      < img  src =“ /w3images/livingroom.jpg ”風格=“寬度：100％ ” onclick =“ onClick（this） ” alt =“斯堪的納維亞風格的輕巧，白色和緊密的設計” >
+      < img  src =“ /w3images/diningroom.jpg ”風格=“寬度：100％ ” onclick =“ onClick（this） ” alt =“帶有設計師椅子的白牆” >
+    </ div >
+
+    < div  class =“ w3-half ” >
+      < img  src =“ /w3images/atrium.jpg ”樣式=“ width：100％ ” onclick =“ onClick（this） ” alt =“中庭Windows ” >
+      < img  src =“ /w3images/bedroom.jpg ” style =“ width：100％ ” onclick =“ onClick（this） ” alt =“一個空間中的臥室和辦公室” >
+      < img  src =“ /w3images/livingroom2.jpg ”樣式=“寬度：100％ ” onclick =“ onClick（this） ” alt =“北歐設計” >
+    </ div >
+  </ div >
+
+  <！-單擊以獲取全尺寸圖像的模態->
+  < div  id =“ modal01 ”類=“ w3-modal w3-black ”樣式=“ padding-top：0 ” onclick =“ this.style.display ='none' ” >
+    < span  class =“ w3-button w3-黑色w3-xxlarge w3-display-topright ” > × </ span >
+    < div  class =“ w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64 ” >
+      < img  id =“ img01 ”類=“ w3-image ” >
+      < p  id =“標題” > </ p >
+    </ div >
+  </ div >
+
+  <！-服務->
+  < div  class =“ w3-container ” id =“ services ” style =“ margin-top：75px ” >
+    < h1  class =“ w3-xxxlarge w3-text-red ” > < b >服務。</ b > </ h1 >
+    < hr 樣式=“ width：50px; border：5px實心紅色” class =“ w3-round ” >
+    < p >我們是一家室內設計服務公司，專注於最適合您的房屋和最適合您的！</ p >
+    < p >關於我們服務的一些文字-我們做什麼和我們提供什麼。我們是精英人士，我們是臨時工，包括勞動者和勞動者。盡量不要抽煙，不要因抽煙而鍛煉。Duis aute irure
+    革命性的假想中的多洛爾。聖人occaecat cupidatat非偶然的，在culof qui officia中的絕望動畫和動手做事奉獻的精英，sed做eiusmod tempor
+    勞工和勞動者聯合會。盡量不要抽煙，不要因抽煙而鍛煉。
+    </ p >
+  </ div >
+  
+  <！-設計師->
+  < div  class =“ w3-container ” id =“ designer ” style =“ margin-top：75px ” >
+    < h1  class =“ w3-xxxlarge w3-text-red ” > < b >設計師。</ b > </ h1 >
+    < hr 樣式=“ width：50px; border：5px實心紅色” class =“ w3-round ” >
+    < p >世界上最好的球隊。</ p >
+    < p >我們是奉獻者，奉獻者，勞動者和勞動者。盡量不要抽煙，不要因抽煙而鍛煉。Duis aute irure
+    革命性的假想中的多洛爾。聖人occaecat cupidatat非偶然的，在culof qui officia中的絕望動畫和動手做事奉獻的精英，sed做eiusmod tempor
+    辛苦勞動和quiss nostrud鍛煉ullamco labisni ali aliquip從商業上的後果。
+    </ p >
+    < p > < b >我們的設計師被精心挑選</ b >：</ p >
+  </ div >
+
+  <！-團隊->
+  < div  class =“ w3-row-padding w3-grayscale ” >
+    < div  class =“ w3-col m4 w3-margin-bottom ” >
+      < div  class =“ w3-light-grey ” >
+        < img  src =“ /w3images/team2.jpg ” alt =“ John ”樣式=“ width：100％ ” >
+        < div  class =“ w3-container ” >
+          < h3 >約翰·多伊</ h3 >
+          < p  class =“ w3-opacity ” >首席執行官和創始人</ p >
+          < p > Phasellus eget enim EU lectus faucibus前庭。Suspendisse sodales pellentesque元素。</ p >
+        </ div >
+      </ div >
+    </ div >
+    < div  class =“ w3-col m4 w3-margin-bottom ” >
+      < div  class =“ w3-light-grey ” >
+        < img  src =“ /w3images/team1.jpg ” alt =“簡” style =“ width：100％ ” >
+        < div  class =“ w3-container ” >
+          < h3 >簡·多伊</ h3 >
+          < p  class =“ w3-opacity ” >設計器</ p >
+          < p > Phasellus eget enim EU lectus faucibus前庭。Suspendisse sodales pellentesque元素。</ p >
+        </ div >
+      </ div >
+    </ div >
+    < div  class =“ w3-col m4 w3-margin-bottom ” >
+      < div  class =“ w3-light-grey ” >
+        < img  src =“ /w3images/team3.jpg ” alt =“ Mike ”樣式=“ width：100％ ” >
+        < div  class =“ w3-container ” >
+          < h3 >邁克·羅斯</ h3 >
+          < p  class =“ w3-opacity ” >建築師</ p >
+          < p > Phasellus eget enim EU lectus faucibus前庭。Suspendisse sodales pellentesque元素。</ p >
+        </ div >
+      </ div >
+    </ div >
+  </ div >
+
+  <！-包裝/價格表->
+  < div  class =“ w3-container ” id =“包” style =“ margin-top：75px ” >
+    < h1  class =“ w3-xxxlarge w3-text-red ” > < b >軟件包。</ b > </ h1 >
+    < hr 樣式=“ width：50px; border：5px實心紅色” class =“ w3-round ” >
+    < p >一些文本我們的價格。Lorem ipsum consectetur adipiscing精英，sed do eiusmod tempor indicidunt ut laboure et dolore magna aliqua。盡量不要抽煙，不要因抽煙而鍛煉。Duis aute irure </ p >
+  </ div >
+
+  < div  class =“ w3-row-padding ” >
+    < div  class =“ w3-half w3-margin-bottom ” >
+      < ul  class =“ w3-ul w3-light-grey w3-center ” >
+        < li  class =“ w3-dark-grey w3-xlarge w3-padding-32 ” >基本</ li >
+        < li  class =“ w3-padding-16 ” >平面佈置</ li >
+        < li  class =“ w3-padding-16 ” > 10小時支持</ li >
+        < li  class =“ w3-padding-16 ” >攝影</ li >
+        < li  class =“ w3-padding-16 ” >家具折扣20％</ li >
+        < li  class =“ w3-padding-16 ” >優惠</ li >
+        < li  class =“ w3-padding-16 ” >
+          < h2 > $ 199 </ h2 >
+          < span  class =“ w3-opacity ” >每個房間</ span >
+        </ li >
+        < li  class =“ w3-light-grey w3-padding-24 ” >
+          < button  class =“ w3-button w3-white w3-padding-large w3-hover-black ” >註冊</ button >
+        </ li >
+      </ ul >
+    </ div >
+        
+    < div  class =“ w3-half ” >
+      < ul  class =“ w3-ul w3-light-grey w3-center ” >
+        < li  class =“ w3-red w3-xlarge w3-padding-32 ” >專業版</ li >
+        < li  class =“ w3-padding-16 ” >平面佈置</ li >
+        < li  class =“ w3-padding-16 ” > 50小時支持</ li >
+        < li  class =“ w3-padding-16 ” >攝影</ li >
+        < li  class =“ w3-padding-16 ” >家具折扣50％</ li >
+        < li  class =“ w3-padding-16 ” >偉大的交易</ li >
+        < li  class =“ w3-padding-16 ” >
+          < h2 > $ 249 </ h2 >
+          < span  class =“ w3-opacity ” >每個房間</ span >
+        </ li >
+        < li  class =“ w3-light-grey w3-padding-24 ” >
+          < button  class =“ w3-button w3-red w3-padding-large w3-hover-black ” >註冊</ button >
+        </ li >
+      </ ul >
+    </ div >
+  </ div >
+  
+  <！-聯繫->
+  < div  class =“ w3-container ” id =“聯繫人” style =“ margin-top：75px ” >
+    < h1  class =“ w3-xxxlarge w3-text-red ” > < b >聯繫人。</ b > </ h1 >
+    < hr 樣式=“ width：50px; border：5px實心紅色” class =“ w3-round ” >
+    < p >你想我們的風格你的家？填寫表格，然後填寫詳細信息：）我們喜歡結識新朋友！</ p >
+    < form  action =“ /action_page.php ” target =“ _blank ” >
+      < div  class =“ w3-section ” >
+        <標籤>名稱</標籤>
+        <輸入 類別=“ w3-input w3-border ”類型=“文本” name =“名稱”必需>
+      </ div >
+      < div  class =“ w3-section ” >
+        <標籤>電子郵件</標籤>
+        <輸入 類別=“ w3-input w3-border ”類型=“文本”名稱=“電子郵件”必填>
+      </ div >
+      < div  class =“ w3-section ” >
+        <標籤>消息</標籤>
+        <輸入 類別=“ w3-input w3-border ”類型=“文本” name =“消息”必需>
+      </ div >
+      <按鈕 類型=“提交”類=“ w3-button w3-block w3-padding-large w3-red w3-margin-bottom ” >發送消息</ button >
+    </表單>  
+  </ div >
+
+<！-結束頁內容->
+</ div >
+
+<！-W3.CSS容器->
+< div  class =“ w3-light-grey w3-container w3-padding-32 ” style =“ margin-top：75px; padding-right：58px ” > < p  class =“ w3-right ” >由< a  href提供支持=“ https://www.w3schools.com/w3css/default.asp ”標題=“ W3.CSS ”目標=“ _blank ”類=“ w3-hover-opacity ” > w3.css </ a > </ p > </div >
+
+<腳本>
+//打開和關閉側邊欄的腳本
+函數 w3_open （） {
+  文件。getElementById （“ mySidebar” ）。風格。顯示 =  “塊” ;
+  文件。getElementById （“ myOverlay” ）。風格。顯示 =  “塊” ;
+}
+ 
+函數 w3_close （） {
+  文件。getElementById （“ mySidebar” ）。風格。顯示 =  “無” ；
+  文件。getElementById （“ myOverlay” ）。風格。顯示 =  “無” ；
+}
+
+//模態圖片庫
+函數 onClick （元素） {
+  文件。getElementById （“ img01” ）。src  = 元素。src ;
+  文件。getElementById （“ modal01” ）。風格。顯示 =  “塊” ;
+  var  captionText  =  document 。getElementById （“標題” ）;
+  captionText 。innerHTML  = 元素。alt ;
+}
+</腳本>
+
+</ body >
+</ html >
